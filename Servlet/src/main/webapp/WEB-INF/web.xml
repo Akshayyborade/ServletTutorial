@@ -12,6 +12,10 @@
 		<servlet-name>second</servlet-name>
 		<servlet-class>com.Servlet.GenericServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>third</servlet-name>
+		<servlet-class>com.Servlet.HttpServletTutorial</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>first</servlet-name>
 		<url-pattern>/web</url-pattern>
@@ -20,4 +24,9 @@
 		<servlet-name>second</servlet-name>
 		<url-pattern>/Generic</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>third</servlet-name>
+		<url-pattern>/Http</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
