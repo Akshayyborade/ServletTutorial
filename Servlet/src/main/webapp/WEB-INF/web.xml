@@ -16,6 +16,10 @@
 		<servlet-name>third</servlet-name>
 		<servlet-class>com.Servlet.HttpServletTutorial</servlet-class>
 	</servlet>
+		<servlet>
+		<servlet-name>form</servlet-name>
+		<servlet-class>com.Servlet.FormServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>first</servlet-name>
 		<url-pattern>/web</url-pattern>
@@ -27,6 +31,10 @@
 	<servlet-mapping>
 		<servlet-name>third</servlet-name>
 		<url-pattern>/Http</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>form</servlet-name>
+		<url-pattern>/Registration</url-pattern>
 	</servlet-mapping>
 	
 </web-app>
