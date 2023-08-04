@@ -2,7 +2,9 @@ package com.Servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.lang.ProcessBuilder.Redirect;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,13 +21,9 @@ public class FormServlet extends HttpServlet {
 		String email = req.getParameter("user_eamil");
 		String pass = req.getParameter("user_pass");
 		String gender = req.getParameter("user_gender");
-		out.println("<ul>\r\n"
-				+ "	<li>Name: "+name+"</li>\r\n"
-				+ "	<li>Email: "+email+"</li>\r\n"
-				+ "	<li>Password: "+pass+"</li>\r\n"
-				+ "	<li>Gender: "+gender+"</li>\r\n"
-				+ "	\r\n"
-				+ "	</ul>");
+		out.println("Register Sucessfully");
+		RequestDispatcher rd = req.getRequestDispatcher("register.jsp");
+		rd.include(req, resp);
 		
 		
 	}
