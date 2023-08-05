@@ -1,0 +1,43 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>first</servlet-name>
+		<servlet-class>com.Servlet.FirstServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>second</servlet-name>
+		<servlet-class>com.Servlet.GenericServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>third</servlet-name>
+		<servlet-class>com.Servlet.HttpServletTutorial</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>form</servlet-name>
+		<servlet-class>com.Servlet.FormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>first</servlet-name>
+		<url-pattern>/web</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>second</servlet-name>
+		<url-pattern>/Generic</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>third</servlet-name>
+		<url-pattern>/Http</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>form</servlet-name>
+		<url-pattern>/Registration</url-pattern>
+	</servlet-mapping>
+
+</web-app>
